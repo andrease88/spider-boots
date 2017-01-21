@@ -51,18 +51,18 @@
     h4{font-size: 1.2em;
 	}
 	h5{font-size: 1.1em;
-	}	
+	}
     h6{font-size: 1.8em;
     }
 
 	.display-4{font-size: 4.5rem;}
 
-	
+
 
 	.text-left{
-		text-align: left !important; 
+		text-align: left !important;
 	}
-	
+
 	.wrapper-p {
 		width: 70%;
 		margin: auto;
@@ -96,7 +96,11 @@
 	#menu {
   	display: block;
 	}
-}
+	.panel {
+	 width: 95%;
+	 height: 250px;
+ }
+ }
 
 
 @media only screen and (min-width: 992px) {
@@ -112,7 +116,7 @@
 	}
 	h6{font-size: 2em;}
 
-	
+
 	.display-4{font-size: 6rem;}
 
   	.wrapper-p {
@@ -139,5 +143,6 @@
 		#menu {
   	display: block;
 	}
+	.panel {height: 300px;}
 
 }

@@ -213,3 +213,31 @@ function initMap() {
           ]
         });
       }
+
+//CLICKEVENT ABOUT US
+var matte = 'Hej jag heter Mattias och jag..';
+var andreas = 'Hej jag heter Andreas och jag..';
+var nico = 'Hej jag heter Nicolas och jag..';
+var closeBtn = '<span class="btnClose">Stäng</span>';
+
+$('.service-icon').click(function(){
+  console.log(this.id);
+  if (this.id === 'photo1'){
+    $('<div class="overlay-matte img-clicked"><p>' + matte + '</p></div>').appendTo('#overlay');
+    $(closeBtn).appendTo('.overlay-matte');
+    $('.img-clicked').addClass('slideExpandUp');
+    } else if (this.id === 'photo2'){
+      $('<div class="overlay-andreas img-clicked"><p>' + andreas + '</p></div>').appendTo('#overlay');
+      $(closeBtn).appendTo('.overlay-andreas');
+      $('.img-clicked').addClass('slideExpandUp');
+    } else {
+      $('<div class="overlay-nico img-clicked"><p>' + nico + '</p></div>').appendTo('#overlay');
+      $(closeBtn).appendTo('.overlay-nico');
+      $('.img-clicked').addClass('slideExpandUp');
+  }
+  $('.service-icon').addClass('pointer-event');
+  $('.btnClose').click(function(){
+    $(this).parent().remove();
+    $('.service-icon').removeClass('pointer-event');
+  });
+});

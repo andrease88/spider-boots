@@ -1,5 +1,4 @@
-@import 'animations';
-
+html {font-family: 'Roboto', sans-serif;}
 
 body {
   overflow-x: hidden;
@@ -17,7 +16,7 @@ body {
 
 .navbar {
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   width: 100%;
   background: transparent;
   padding-right: 25px !important;
@@ -149,11 +148,25 @@ nav.shrink a {
 }
 
 .scrollToTop{
-  color: #e48e98;
-  position: fixed;
-  left: 88vw;
-  bottom: 15vw;
-  display:none;
+  display: none;
+  position:fixed;
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  background-color: #38383b;
+  bottom: 0;
+  right: 0;
+    i{
+    color: white;
+    font-size: 24px;
+    left: 10px;
+    position: absolute;
+    top: 8px;
+  }
+    &:hover{
+    opacity: 0.8;
+    transition: all .3s ease;
+    }
 }
 
 .bgc-red {
@@ -250,6 +263,9 @@ h1, h2, h3, h4, h5, h6 {
   border: 10px solid #ececec;
   position: relative;
   transition: all 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-link:focus {
@@ -317,4 +333,181 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 5px;
   left: 5px;
+}
+
+.panel {
+    width: 100%;
+    height: 200px;
+    margin: 8px auto;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.front {
+    z-index: 2;
+    background-position: center;
+    background-size: cover;
+}
+
+.brand-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+
+.brand-logo {
+  width: 30%;
+  }
+
+.back {
+    z-index: 1;
+    transform: rotateY(-180deg);
+}
+
+.back-x {
+    z-index: 1;
+    transform: rotateX(-180deg);
+}
+
+.brand-image-2 {
+  background-image: url(../pics/brand2-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.brand-image-1 {
+  background-image: url(../pics/brand1-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.brand-image-3 {
+  background-image: url(../pics/brand3-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.brand-image-4 {
+  background-image: url(../pics/brand4-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.brand-image-5 {
+  background-image: url(../pics/brand5-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.panel:hover .front {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.panel:hover .front-x {
+    z-index: 1;
+    transform: rotateX(180deg);
+}
+
+.panel:hover .back {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.panel:hover .back-x {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.brand-text {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.brand-person {
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.bgc-paradise-pink {
+  background-color: #DF4859;
+}
+
+.bgc-purple-haze {
+  background-color: #430318;
+}
+.bgc-blue-bird {
+  background-color: #00a4bb;
+}
+.bgc-green-sparrow {
+  background-color: #4c9a17;
+}
+
+.bgc-gold-rush {
+  background-color: #4f481c;
+}
+
+
+//CLICKEVENT ABOUT US
+.overlay-matte {
+  background-color: #DF4859;
+  color: #ffffff;
+}
+
+.overlay-andreas {
+  background-color: #E5959E;
+  color: #ffffff;
+}
+
+.overlay-nico {
+  background-color: #EFEFD5;
+  color: #ffffff;
+}
+
+.img-clicked {
+  position: absolute;
+  padding: 2rem;
+  margin-top: 13rem;
+  left: 30%;
+  width: 40%;
+  height: 30%;
+  opacity: 0.9;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px -1px 27px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 27px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 27px -1px rgba(0, 0, 0, 0.75);
+}
+
+.btnClose {
+  user-select: none;
+  border-radius: 10px;
+  background-color: #DF4859;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  &:hover {
+    background-color: #C17982;
+  }
+  &:active {
+    background-color: #8B585F;
+  }
+}
+
+.pointer-event {
+  pointer-events: none;
 }
