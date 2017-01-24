@@ -68,8 +68,8 @@ $(document).ready(function(){
   });
 });
 $(document).ready(function(){
-  $('.slicknav_icon').click(function(){
-    $(this).toggleClass('open');
+  $('.slicknav_btn').click(function(){
+    $('.slicknav_icon').toggleClass('open');
     $('.intro-section').toggleClass('intro-section-hidden');
   });
 });
