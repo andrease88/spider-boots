@@ -22,19 +22,19 @@ body {
   padding-right: 25px !important;
   border-radius: 0;
     .nav-link {
-      color: white;
-    &:hover {
-      color: rgb(223, 72, 89);
-      transition: color 0.2s linear;
-    }
+    	color: white;
   }
 }
 
 nav a {
   font-size: 24px;
   padding: 12px 6px 12px 6px;
-  -webkit-transition: all 0.5s linear;
-   transition: all 0.5s linear;
+  -webkit-transition: all 0.7s ease;
+   transition: all 0.7s ease;
+   &:hover {
+     color: rgb(223, 72, 89);
+     transform: scale(1.1);
+   }
 }
 
 .nav-item .active {
@@ -98,15 +98,15 @@ nav.shrink a {
 }
 
 .staff {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  .rounded-circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	.rounded-circle {
     box-shadow: 0 0 10px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
-  }
+	}
 }
 
 .parallax {
@@ -329,6 +329,15 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(-135deg);
 }
 
+.slicknav_nav a{
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease !important;
+}
+
+.slicknav_nav a:hover {
+  transform: scale(1.1);
+}
+
 .intro-section-hidden {
   display: none;
 }
@@ -354,6 +363,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 0px;
     left: 0px;
+    border:none;
 }
 
 .front {
@@ -462,6 +472,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #4f481c;
 }
 
+
 //CLICKEVENT ABOUT US
 .overlay-matte {
   background-color: #DF4859;
@@ -513,6 +524,7 @@ h1, h2, h3, h4, h5, h6 {
 .pointer-event {
   pointer-events: none;
 }
+
 
 .line-small {
   border: 0;
