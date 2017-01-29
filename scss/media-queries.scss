@@ -99,7 +99,10 @@
 	.panel {
 	 width: 95%;
 	 height: 250px;
- }
+	 }
+	.text {
+		font-size: 1.5em;
+	}
  }
 
 
@@ -144,5 +147,8 @@
   	display: block;
 	}
 	.panel {height: 300px;}
+	.text {
+		font-size: 1.6em;
+	}
 
 }
